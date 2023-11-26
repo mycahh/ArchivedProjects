@@ -1,0 +1,52 @@
+.message-input {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 16px 10px 10px;
+    background-color: #f0f0f0;
+    bottom: 0;
+  }
+  
+  .message-input textarea {
+    flex: 1;
+    padding: 8px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Ubuntu';
+    border: 2px solid #202329;
+  }
+  
+  .message-input button {
+    box-sizing: border-box;
+    padding: 2px 18px;
+    display: flex;
+    align-items: center;
+    background-color: #61d9fa;
+    color: white;
+    /* border: 2px solid #202329; */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Ubuntu'
+  }
+
+  .material-symbols-outlined-send {
+    font-size: 32px;
+    margin: 0px;
+    color: #ffffff;
+
+    /* -webkit-text-stroke-width: 0.5px; Ancho del borde */
+    /* -webkit-text-stroke-color: #000000; Color del borde */
+
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+  
+  .message-input textarea:focus {
+    outline-color: #61DAFA;
+  }

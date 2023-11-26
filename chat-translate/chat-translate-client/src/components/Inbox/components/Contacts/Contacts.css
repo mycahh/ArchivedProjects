@@ -1,0 +1,149 @@
+.contacts {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 75%;
+  width: 0;
+  border-radius: 8px;
+  z-index: 999;
+  overflow: hidden;
+  transition: width 0.3s ease;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts.open {
+  width: 350px;
+}
+
+.menu-background {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 998;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.contacts.open .menu-background {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.menu-content {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 100%;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  z-index: 999;
+}
+
+
+.contacts-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contacts-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.contacts-options {
+  position: relative;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.MenuText {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.contacts-option{
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+
+.MenuIcon{
+  margin: 0px 10px 10px 6px;
+  font-size: 25px;
+}
+
+.cerrar {
+  right: 0;
+  margin-right: 16px;
+}
+
+.cerrar .MenuIcon {
+  color: #ff0000;
+}
+
+.contacts-search {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  height: 35px;
+}
+
+#search-user{
+  margin-top: 4px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.user-avatar {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+
+.contact-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.add-enabled {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.add-disabled {
+  display: none;
+}
+
+.add-contact-button{
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  cursor: pointer;
+}

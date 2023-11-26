@@ -1,0 +1,15 @@
+.messageContainer {
+    box-sizing: border-box;
+    background-color: #7898dd;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    justify-content: flex-end;
+  }
+
+.messageContainer ul {
+    margin : 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: auto;
+}

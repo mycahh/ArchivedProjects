@@ -1,0 +1,18 @@
+.chatsContainer {
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-type: y mandatory;
+    overflow-y: hidden;
+  }
+
+ul {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+}
+
+.not-found-message{
+  margin-left: 20px;
+}

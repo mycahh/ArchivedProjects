@@ -1,0 +1,16 @@
+.material-symbols-outlined-menu {
+    font-size: 28px;
+    /* margin: 10px 10px 10px 0px; */
+    margin-right: 16px;
+    cursor: pointer;
+    color: #000000;
+
+    /* -webkit-text-stroke-width: 0.5px; Ancho del borde */
+    /* -webkit-text-stroke-color: #000000; Color del borde */
+
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}

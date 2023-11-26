@@ -1,0 +1,59 @@
+.Display{
+    display: flex;
+}
+
+.inbox {
+    background-color: #f0f0f0;
+    width: 30%;
+    display: grid;
+    grid-template-rows: 70px 1fr;
+    max-height: 100vh;
+}
+
+.chat-closed{
+    width: 70%;
+    /* Añadido */
+    display: grid;
+    grid-template-rows: 70px 1fr auto;
+    max-height: 100vh;
+}
+
+.back-button{
+    display: none;
+  }
+
+  
+  /* Estilos para dispositivos móviles (hasta 768px de ancho) */
+  @media screen and (max-width: 768px) {
+    .Display {
+      flex-direction: column; /* Cambiado a column para que se muestren uno encima del otro */
+    }
+  
+    .inbox {
+        width: 100%; /* Ocupa toda la pantalla en dispositivos móviles */
+        display: block; /* Muestra el inbox en dispositivos móviles */
+        display: grid;
+        grid-template-rows: 70px 1fr;
+        max-height: 100vh;
+    }
+  
+    .chat-open {
+        width: 100%; /* Ocupa toda la pantalla en dispositivos móviles */ 
+        display: grid;
+        grid-template-rows: 70px 1fr auto;
+        max-height: 100vh;
+        position: absolute;
+    }
+
+    .chat-closed {
+        display: none; /* Muestra el chat en dispositivos móviles cuando se selecciona un chat */
+        }
+
+    .back-button{
+        display: block;
+        margin-left: 8px;
+        margin-right: 16px;
+        cursor: pointer;
+    }
+  }
+  

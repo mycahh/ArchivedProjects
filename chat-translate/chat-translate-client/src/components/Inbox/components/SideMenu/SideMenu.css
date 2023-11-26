@@ -1,0 +1,101 @@
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  z-index: 999;
+  overflow: hidden;
+  transition: width 0.3s ease;
+}
+
+.side-menu.open {
+  width: 250px;
+}
+
+.menu-background {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 998;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.side-menu.open .menu-background {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.menu-content {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  z-index: 999;
+}
+
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-photo {
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.menu-options {
+  display: flex;
+  flex-direction: column;
+}
+
+.MenuText {
+  font-size: 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.option{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+
+.MenuIcon{
+  margin: 0px 10px 10px 6px;
+  font-size: 25px;
+}
+
+.logout {
+  position: absolute;
+  bottom: 0px;
+  margin-bottom: 10px;
+}
+
+.logout .MenuIcon {
+  color: #ff0000;
+}
