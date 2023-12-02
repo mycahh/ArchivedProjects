@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-body: #3C3836;
+    --white: #ffffff;
+    --primary: #8ec07c;
+    --secondary: #d79921;
+}
+
+body {
+    background-color: var(--bg-body);
+    font-family: 'Inconsolata', monospace;
+    color: var(--white);
+}
+
+.nav-item a {
+    color: var(--primary) !important;
+}
+
+.navbar-brand {
+    color: var(--secondary);
+}
+
+.blockquote {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.note-secondary {
+    background-color: #ebedef;
+    border-color: #565e6c;
+}
+
+.note-secondary p {color: black;}
+
+.note {
+    --mdb-note-padding: 10px;
+    --mdb-note-border-width: 6px;
+    --mdb-note-border-radius: 5px;
+    --mdb-note-strong-font-weight: 600;
+    padding: var(--mdb-note-padding);
+    border-left: var(--mdb-note-border-width) solid;
+    border-radius: var(--mdb-note-border-radius);
+    border-left-color: #565e6c !important;
+}
+
+.gap-quote {
+    gap: 20px;
+}
+
+.card-accordion {
+    background-color: transparent;
+    color: inherit;
+}
+
+.card-accordion a {
+    color: inherit;
+}
+
+.accordion-item {
+    background: transparent;
+    color: white;
+}
+
+.accordion-item .accordion-header button {
+    color: var(--secondary);
+    background-color: transparent;
+}

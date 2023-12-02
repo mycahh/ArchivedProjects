@@ -1,0 +1,49 @@
+:root {
+    --light: #fdf9f0;
+    --primary: #fdaecb;
+    --beige: #feded3;
+    --dark-primary: #ce407a;
+    --secondary: #eddbe7;
+}
+
+body {
+    background-color: var(--light);
+}
+
+.font-primary {
+    font-family: 'Indie Flower', cursive;
+}
+
+.container {
+    max-width: 760px;
+}
+
+.img-width {
+    max-width: 400px;
+}
+
+.navbar { background-color: transparent !important; }
+
+header { 
+    background-color: var(--beige) !important;
+}
+
+img.img-moda {
+    width: 200px !important;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+}
+
+.navbar-nav {
+    gap: 1rem;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}

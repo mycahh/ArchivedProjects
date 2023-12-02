@@ -1,0 +1,22 @@
+---
+    import PagesURL from "./PagesURL"
+    import NavbarItem from "./navbar-item.astro"
+
+    const { currentPage } = Astro.props
+---
+<nav class="h-20 font-semibold mt-5 navbar">
+    <div>
+        {PagesURL.map(nav_item => <NavbarItem {...nav_item} isCurrentPage={currentPage === nav_item.link} /> )}        
+    </div>    
+    <div>
+        <a href="/contact" class="bg-red-800 rounded py-2 px-3">Touch me</a>
+    </div>
+</nav>
+
+<style>
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+</style>

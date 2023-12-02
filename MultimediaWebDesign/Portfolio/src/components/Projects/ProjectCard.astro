@@ -1,0 +1,41 @@
+---
+  const { title, description, githubLink, deployLink, preview_url } = Astro.props
+---
+<div class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-100">
+    <img class="w-full img-preview" src={preview_url} alt="Sunset in the mountains">
+    <div class="px-6 py-4">
+      <div class="font-bold text-xl mb-2 text-gray-800">{title}</div>
+      <p class="text-gray-700 text-base">
+        { description }
+      </p>
+    </div>
+    <div class="px-6 pt-4 pb-2 button-group">
+      <a href={deployLink} target="_blank"> 
+        <button class="bg-gray-900 p-2 rounded"> 
+          Demo
+        </button>
+      </a>
+      <a href={githubLink} target="_blank"> 
+        <button class="bg-gray-900 p-2 rounded"> 
+          Github
+        </button>
+      </a>
+    </div>
+  </div>
+
+<style>
+  button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .button-group {
+    display: flex;
+    gap: 8px;
+  }
+
+  .img-preview { 
+    height: 140px;
+  }
+</style>

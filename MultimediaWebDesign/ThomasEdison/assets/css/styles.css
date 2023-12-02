@@ -1,0 +1,91 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    height: 90px;
+    padding: 10px;
+    background-color: #5DADE2;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.pt-4 {
+    margin-top: 2rem;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    margin-top: 1rem;
+    margin: 1rem auto 0 auto;
+}
+
+a { text-decoration: none; color: #5DADE2;}
+
+.main {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 15rem 15rem;
+    grid-template-rows: 10rem 10rem ;
+    gap: 2rem;
+    justify-content: center;
+    padding-top: 8rem;
+}
+
+main section {
+    text-align: center;
+    background-color: #e2ddd9;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    background-color: #2a2829;
+    color: #fff;
+}
+
+.bio {
+    width: 200px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.quote-container p {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+form {
+    background-color: #e2ddd9;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.group-form {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #5DADE2;
+    margin-top: 2rem;
+    padding: 1rem;
+}

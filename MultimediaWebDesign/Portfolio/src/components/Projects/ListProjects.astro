@@ -1,0 +1,18 @@
+---
+    import ProjectsInfo from './ProjectsInfo'
+    import ProjectCard from './ProjectCard.astro'
+---
+
+<div class="container pb-6">
+    {
+        ProjectsInfo.map(info => <ProjectCard {...info} />)
+    }
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+    }
+</style>

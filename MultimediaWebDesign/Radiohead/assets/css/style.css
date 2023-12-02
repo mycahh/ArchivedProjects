@@ -1,0 +1,13 @@
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bg-hero.webp") !important;
+    color: white;
+    background-size: cover;
+}
+
+.list-card-health img {
+    height: 200px;
+}
+
+.navbar a {
+    color: white !important;
+}

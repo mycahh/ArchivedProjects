@@ -1,0 +1,13 @@
+.bg-jumbotron {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bg-hero.jpg");
+    color: white;
+    margin-top: 56px;
+}
+
+.list-card-health img{
+    height: 200px;
+}
+
+.nutrición-container {
+    font-weight: 500;
+}
